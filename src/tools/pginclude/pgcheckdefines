@@ -37,7 +37,7 @@ my $MAKE = "make";
 # We ignore .h files under src/include/port/, since only the one exposed as
 # src/include/port.h is interesting.  (XXX Windows ports have additional
 # files there?)  Ditto for .h files in src/backend/port/ subdirectories.
-# Including these .h files would clutter the list of define'd symbols and
+# Including these .h files would clutter the list of defined symbols and
 # cause a lot of false-positive results.
 #
 my (@cfiles, @hfiles);

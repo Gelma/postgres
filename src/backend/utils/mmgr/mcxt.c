@@ -205,7 +205,7 @@ MemoryContextResetChildren(MemoryContext context)
  *
  * The type-specific delete routine removes all storage for the context,
  * but we have to recurse to handle the children.
- * We must also delink the context from its parent, if it has one.
+ * We must also unlink the context from its parent, if it has one.
  */
 void
 MemoryContextDelete(MemoryContext context)
@@ -229,7 +229,7 @@ MemoryContextDelete(MemoryContext context)
 	MemoryContextCallResetCallbacks(context);
 
 	/*
-	 * We delink the context from its parent before deleting it, so that if
+	 * We unlink the context from its parent before deleting it, so that if
 	 * there's an error we won't have deleted/busted contexts still attached
 	 * to the context tree.  Better a leak than a crash.
 	 */
@@ -258,7 +258,7 @@ MemoryContextDeleteChildren(MemoryContext context)
 	AssertArg(MemoryContextIsValid(context));
 
 	/*
-	 * MemoryContextDelete will delink the child from me, so just iterate as
+	 * MemoryContextDelete will unlink the child from me, so just iterate as
 	 * long as there is a child.
 	 */
 	while (context->firstchild != NULL)
@@ -360,7 +360,7 @@ MemoryContextSetParent(MemoryContext context, MemoryContext new_parent)
 	if (new_parent == context->parent)
 		return;
 
-	/* Delink from existing parent, if any */
+	/* Unlink from existing parent, if any */
 	if (context->parent)
 	{
 		MemoryContext parent = context->parent;

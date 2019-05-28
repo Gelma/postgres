@@ -1085,7 +1085,7 @@ static int r_un_double(struct SN_env * z) { /* backwardmode */
 
 static int r_un_accent(struct SN_env * z) { /* backwardmode */
     {   int i = 1;
-        while(1) { /* atleast, line 216 */
+        while(1) { /* at least, line 216 */
             if (out_grouping_b_U(z, g_v, 97, 251, 0)) goto lab0; /* non v, line 216 */
             i--;
             continue;

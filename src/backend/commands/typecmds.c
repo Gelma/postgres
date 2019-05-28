@@ -2944,7 +2944,7 @@ get_rels_with_domain(Oid domainOid, LOCKMODE lockmode)
 			continue;
 		}
 
-		/* Else, ignore dependees that aren't user columns of relations */
+		/* Else, ignore dependencies that aren't user columns of relations */
 		/* (we assume system columns are never of domain types) */
 		if (pg_depend->classid != RelationRelationId ||
 			pg_depend->objsubid <= 0)

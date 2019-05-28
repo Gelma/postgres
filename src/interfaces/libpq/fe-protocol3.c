@@ -1239,7 +1239,7 @@ reportErrorPosition(PQExpBuffer msg, const char *query, int loc, int encoding)
 
 		/*
 		 * Replace tabs with spaces in the writable copy.  (Later we might
-		 * want to think about coping with their variable screen width, but
+		 * want to think about copying with their variable screen width, but
 		 * not today.)
 		 */
 		if (ch == '\t')

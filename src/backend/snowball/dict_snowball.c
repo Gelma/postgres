@@ -149,7 +149,7 @@ typedef struct DictSnowball
 	int			(*stem) (struct SN_env *z);
 
 	/*
-	 * snowball saves alloced memory between calls, so we should run it in our
+	 * snowball saves allocated memory between calls, so we should run it in our
 	 * private memory context. Note, init function is executed in long lived
 	 * context, so we just remember CurrentMemoryContext
 	 */

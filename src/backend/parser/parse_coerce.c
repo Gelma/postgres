@@ -2121,7 +2121,7 @@ IsPreferredType(TYPCATEGORY category, Oid type)
  *
  * As of 7.3, binary coercibility isn't hardwired into the code anymore.
  * We consider two types binary-coercible if there is an implicitly
- * invokable, no-function-needed pg_cast entry.  Also, a domain is always
+ * invocable, no-function-needed pg_cast entry.  Also, a domain is always
  * binary-coercible to its base type, though *not* vice versa (in the other
  * direction, one must apply domain constraint checks before accepting the
  * value as legitimate).  We also need to special-case various polymorphic

@@ -321,7 +321,7 @@ SPI_execute("INSERT INTO foo SELECT * FROM bar RETURNING *", false, 5);
 typedef struct
 {
     MemoryContext tuptabcxt;    /* memory context of result table */
-    uint64      alloced;        /* number of alloced vals */
+    uint64      alloced;        /* number of allocated vals */
     uint64      free;           /* number of free vals */
     TupleDesc   tupdesc;        /* row descriptor */
     HeapTuple  *vals;           /* rows */

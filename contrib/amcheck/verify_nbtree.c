@@ -1278,7 +1278,7 @@ bt_right_page_check_scankey(BtreeCheckState *state)
 	 * Routines like _bt_search() don't require *any* page split interlock
 	 * when descending the tree, including something very light like a buffer
 	 * pin. That's why it's okay that we don't either.  This avoidance of any
-	 * need to "couple" buffer locks is the raison d' etre of the Lehman & Yao
+	 * need to "couple" buffer locks is the reason d'etre of the Lehman & Yao
 	 * algorithm, in fact.
 	 *
 	 * That leaves deletion.  A deleted page won't actually be recycled by

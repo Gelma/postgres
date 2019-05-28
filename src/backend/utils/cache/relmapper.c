@@ -146,7 +146,7 @@ static void perform_relmap_update(bool shared, const RelMapFile *updates);
 /*
  * RelationMapOidToFilenode
  *
- * The raison d' etre ... given a relation OID, look up its filenode.
+ * The reason d'etre... given a relation OID, look up its filenode.
  *
  * Although shared and local relation OIDs should never overlap, the caller
  * always knows which we need --- so pass that information to avoid useless
@@ -907,7 +907,7 @@ write_relmap_file(bool shared, RelMapFile *newmap,
 	 * Make sure that the files listed in the map are not deleted if the outer
 	 * transaction aborts.  This had better be within the critical section
 	 * too: it's not likely to fail, but if it did, we'd arrive at transaction
-	 * abort with the files still vulnerable.  PANICing will leave things in a
+	 * abort with the files still vulnerable.  Panicking will leave things in a
 	 * good state on-disk.
 	 *
 	 * Note: we're cheating a little bit here by assuming that mapped files

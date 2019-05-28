@@ -4384,7 +4384,7 @@ AfterTriggerExecute(EState *estate,
  *	When immediate_only is true, do not invoke currently-deferred triggers.
  *	(This will be false only at main transaction exit.)
  *
- *	Returns true if any invokable events were found.
+ *	Returns true if any invocable events were found.
  */
 static bool
 afterTriggerMarkEvents(AfterTriggerEventList *events,

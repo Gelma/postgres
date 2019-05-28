@@ -1046,7 +1046,7 @@ pull_up_simple_subquery(PlannerInfo *root, Node *jtnode, RangeTblEntry *rte,
 	/*
 	 * Replace all of the top query's references to the subquery's outputs
 	 * with copies of the adjusted subtlist items, being careful not to
-	 * replace any of the jointree structure. (This'd be a lot cleaner if we
+	 * replace any of the jointree structure. (This would be a lot cleaner if we
 	 * could use query_tree_mutator.)  We have to use PHVs in the targetList,
 	 * returningList, and havingQual, since those are certainly above any
 	 * outer join.  replace_vars_in_jointree tracks its location in the
@@ -1607,7 +1607,7 @@ pull_up_simple_values(PlannerInfo *root, Node *jtnode, RangeTblEntry *rte)
 	/*
 	 * Replace all of the top query's references to the RTE's outputs with
 	 * copies of the adjusted VALUES expressions, being careful not to replace
-	 * any of the jointree structure. (This'd be a lot cleaner if we could use
+	 * any of the jointree structure. (This would be a lot cleaner if we could use
 	 * query_tree_mutator.)  Much of this should be no-ops in the dummy Query
 	 * that surrounds a VALUES RTE, but it's not enough code to be worth
 	 * removing.

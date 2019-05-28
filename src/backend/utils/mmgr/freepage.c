@@ -1652,7 +1652,7 @@ FreePageManagerPutInternal(FreePageManager *fpm, Size first_page, Size npages,
 	if (result.split_pages > 0)
 	{
 		/*
-		 * NB: We could consider various coping strategies here to avoid a
+		 * NB: We could consider various copying strategies here to avoid a
 		 * split; most obviously, if np != result.page, we could target that
 		 * page instead.   More complicated shuffling strategies could be
 		 * possible as well; basically, unless every single leaf page is 100%

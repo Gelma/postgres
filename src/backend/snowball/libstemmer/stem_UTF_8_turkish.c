@@ -2017,7 +2017,7 @@ static int r_is_reserved_word(struct SN_env * z) { /* backwardmode */
 static int r_more_than_one_syllable_word(struct SN_env * z) { /* forwardmode */
     {   int c_test1 = z->c; /* test, line 447 */
         {   int i = 2;
-            while(1) { /* atleast, line 447 */
+            while(1) { /* at least, line 447 */
                 int c2 = z->c;
                 {    /* gopast */ /* grouping vowel, line 447 */
                     int ret = out_grouping_U(z, g_vowel, 97, 305, 1);

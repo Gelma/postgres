@@ -137,7 +137,7 @@ SELECT CAST ( 2 AS numeric ) + 4.0;
    <productname>PostgreSQL</productname> to choose surprising
    interpretations of commands, or to be unable to resolve commands at
    all because there are multiple possible interpretations.  A good
-   rule of thumb is to make a cast implicitly invokable only for
+   rule of thumb is to make a cast implicitly invocable only for
    information-preserving transformations between types in the same
    general type category.  For example, the cast from <type>int2</type> to
    <type>int4</type> can reasonably be implicit, but the cast from
@@ -324,7 +324,7 @@ SELECT CAST ( 2 AS numeric ) + 4.0;
    from string types are
    explicit-only.  You can override this behavior by declaring your own
    cast to replace an automatic cast, but usually the only reason to
-   do so is if you want the conversion to be more easily invokable than the
+   do so is if you want the conversion to be more easily invocable than the
    standard assignment-only or explicit-only setting.  Another possible
    reason is that you want the conversion to behave differently from the
    type's I/O function; but that is sufficiently surprising that you

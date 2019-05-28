@@ -16,7 +16,7 @@
  * Interface (a):
  *		ProcSleep(), ProcWakeup(),
  *		ProcQueueAlloc() -- create a shm queue for sleeping processes
- *		ProcQueueInit() -- create a queue without allocing memory
+ *		ProcQueueInit() -- create a queue without allocating memory
  *
  * Waiting for a lock causes the backend to be put to sleep.  Whoever releases
  * the lock wakes the process up again (and gives it an error code so it knows

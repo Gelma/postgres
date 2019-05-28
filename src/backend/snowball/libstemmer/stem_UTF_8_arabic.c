@@ -1449,7 +1449,7 @@ lab1:
             if (!(z->B[1])) goto lab4; /* Boolean test is_verb, line 509 */
             {   int m4 = z->l - z->c; (void)m4; /* or, line 515 */
                 {   int i = 1;
-                    while(1) { /* atleast, line 512 */
+                    while(1) { /* at least, line 512 */
                         int m5 = z->l - z->c; (void)m5;
                         {   int ret = r_Suffix_Verb_Step1(z); /* call Suffix_Verb_Step1, line 512 */
                             if (ret == 0) goto lab7;

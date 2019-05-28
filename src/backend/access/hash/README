@@ -532,7 +532,7 @@ Freeing an overflow page requires the process to hold buffer content lock in
 exclusive mode on the containing bucket, so need not worry about other
 accessors of pages in the bucket.  The algorithm is:
 
-	delink overflow page from bucket chain
+	unlink overflow page from bucket chain
 	(this requires read/update/write/release of fore and aft siblings)
 	pin meta page and take buffer content lock in shared mode
 	determine which bitmap page contains the free space bit for page

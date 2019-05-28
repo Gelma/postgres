@@ -54,7 +54,7 @@ const char *EAN13_range[][2] = {
 	{"484", "484"},				/* GS1 Moldova */
 	{"485", "485"},				/* GS1 Armenia */
 	{"486", "486"},				/* GS1 Georgia */
-	{"487", "487"},				/* GS1 Kazakstan */
+	{"487", "487"},				/* GS1 Kazakhstan */
 	{"489", "489"},				/* GS1 Hong Kong */
 	{"490", "499"},				/* GS1 Japan */
 	{"500", "509"},				/* GS1 UK */

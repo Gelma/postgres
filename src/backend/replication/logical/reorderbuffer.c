@@ -2279,7 +2279,7 @@ ReorderBufferSerializeTXN(ReorderBuffer *rb, ReorderBufferTXN *txn)
 
 		/*
 		 * store in segment in which it belongs by start lsn, don't split over
-		 * multiple segments tho
+		 * multiple segments to
 		 */
 		if (fd == -1 ||
 			!XLByteInSeg(change->lsn, curOpenSegNo, wal_segment_size))

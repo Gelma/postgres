@@ -77,7 +77,7 @@ typedef struct MemoryContextData
 {
 	NodeTag		type;			/* identifies exact kind of context */
 	/* these two fields are placed here to minimize alignment wastage: */
-	bool		isReset;		/* T = no space alloced since last reset */
+	bool		isReset;		/* T = no space allocated since last reset */
 	bool		allowInCritSection; /* allow palloc in critical section */
 	const MemoryContextMethods *methods;	/* virtual function table */
 	MemoryContext parent;		/* NULL if no parent (toplevel context) */
